@@ -1,0 +1,2 @@
+from ILCC import img_corners_est
+img_corners_est.detect_img_corners()

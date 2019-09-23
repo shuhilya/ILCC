@@ -1,11 +1,12 @@
 ###### File path related
-'base_dir': "" #The path of directory including img,pcd,out folders.
+'base_dir': "res" #The path of directory including img,pcd,out folders.
+'image_format': "jpg"
 ###### Parameters for corner detection from images
 'image_res': (4000,8000) #image resolution for panoramic image only
 'backend': 'matlab' #backend of detecting corners from the image, "matlab" or "opencv"
 'output_img_with_dectected_corners': True #output the image with detected corners
 'back_proj_corners': True #back-project the detected corners of the point cloud to the images
-'camera_type': 'perspective' #camera model: 'panoramic' or 'perspective'
+'camera_type': 'panoramic' #camera model: 'panoramic' or 'perspective'
 'instrinsic_para': (166.87739756, 0., 311.29512622,  0., 334.91696616, 781.89612824,   0., 0., 1.)
 # intrinsic parameters are necessary for perspective cameras (1,2,3,4,5,6,7,8,9)→　[1,2,3
 #                                                                                   4,5,6
@@ -32,4 +33,4 @@
 ######### Settings for multi-processing
 'multi_proc': True #Use multiple processing
 'proc_num': 4 #The number of cores to use for multiple processing
-'poses_num': 20 #The number of image-laserscan pairs 
+'poses_num': 18 #The number of image-laserscan pairs
